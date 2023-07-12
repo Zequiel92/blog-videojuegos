@@ -1,0 +1,294 @@
+body {
+	background-color: black;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+header.encabezado{
+	background-color: black;
+	width: 100%;
+	padding: 0px;
+	
+	opacity: 0.7;
+	
+}
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+	text-align: center;
+	font-family: 'oswald', sans-serif;
+	font-size: 23px
+
+}
+.menu li a:hover{
+	color: #DC143C;
+	transition: all 0.5s ease;
+	border-radius: 10px;
+}
+.menu li{
+	display: inline;
+}
+.banner{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	padding: 10px;
+}
+
+.titulos{
+	margin-top: 20%;
+	color: #DC143C;
+	font-family: 'oswald', sans-serif;
+}
+.nombre{
+	font-size: 150px;
+	margin-bottom: 10px;
+	margin-left: 25%;
+	font-family: sans-serif;
+}
+hr.linea1{
+	width: 28%;
+	height: 11px;
+	margin-left: 35%;
+	background-color: #DC143C;
+	border-color: black;
+}
+.subtitulo{
+	font-size: 35px;
+	margin-left: 46%;
+	margin-top: 10px;
+	color: #DC143C;
+
+
+}
+#about-me{
+	text-align: center;
+	font-family: 'oswald', sans-serif;
+	font-size: 30px;
+}
+#skills{
+	text-align: center;
+}
+#portfolio{
+	text-align: center;
+}
+#contact{
+	text-align: center;
+}
+
+.contenedor{
+	display: flex;
+	width: 800px;
+	font-size: 30px;
+	font-family: 'oswald', sans-serif;
+	margin-left: 20%;
+	text-align: center;
+	box-shadow: 10px 10px 7px;
+	margin-top: 4em;
+	padding: 10px;
+	border-radius: 20px;
+	
+}
+.tarjeta h4{
+	overflow: hidden;
+	color: #DC143C;
+	font-size: 40px;
+}
+.tarjeta img {
+	float: left;
+	margin-right: 10px;
+}
+.tarjeta p{
+
+	margin: 0;
+	color: #DC143C;
+
+}
+
+.conteiner-skills{
+	margin-top: 10%;
+
+}
+.skills,h2{
+	font-family: 'oswald', sans-serif;
+	font-size: 50px;
+	margin-top: 20%;
+	color: #DC143C;
+	
+
+}
+.tarjeta2 img {
+	height: 170;
+	width: 300;
+}
+
+.tarjeta2{
+	font-family: 'oswald', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	width: 300px;
+	display: inline-block;
+	box-shadow: 0px 5px 10px;
+	transition: all 1s ease;
+	padding: 10px;
+	border-radius: 20px;
+	color: #DC143C;
+}
+.tarjeta2:hover{
+	transform: scale(1.1);
+	box-shadow: 0px 5px 10px pink;
+}
+
+.card2 img{
+	height: 160;
+}
+.card2{
+	font-family: 'oswald', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	width: 300px;
+	display: inline-block;
+	box-shadow: 0px 5px 10px #DC143C;
+	transition: all 1s ease;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 20px;
+}
+.card2:hover{
+	transform: scale(1.1);
+	box-shadow: 0px 5px 10px #E4E0E1;
+}
+.card3{
+	font-family: 'oswald', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	width: 300px;
+	display: inline-block;
+	box-shadow: 0px 5px 10px #DC143C;
+	transition: all 1s ease;
+	padding: 10px;
+	border-radius: 20px;
+	
+}
+.card3 img{
+	height: 200px;
+	width: 300px;
+}
+.card3:hover{
+	transform: scale(1.1);
+	box-shadow: 0px 5px 10px #E4E0E1;
+}
+hr.separador{
+	width: 30%;
+	height: 7px;
+	background-color: orange;
+	margin-left: 35%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+hr.separador2{
+	width: 30%;
+	height: 7px;
+	background-color: orange;
+	margin-left: 35%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+
+
+.gamePopular {
+	margin-top: 30%;
+}
+
+
+
+.card-base {
+	position: relative;
+	width: 300px;
+	height: 350px;
+	margin: 20px;
+	display: inline-block;
+}
+
+.card-base .face{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: .5s;
+}
+
+.card-base .front {
+	transform: perspective(600px) rotateY(0deg);
+	box-shadow: 0 5px 10px #DC143C;
+}
+
+.card-base .front img{
+	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+.card-base .front h3{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	color: #E4E0E1;
+	background-color: rgba(0, 0, 0,.4);
+	text-align: center;
+}
+
+.card-base .back{
+	transform: perspective(600px) rotateY(180deg);
+	background: #DC143C;
+	padding: 15px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	box-shadow: 0 5px 10px #f3f3f3;
+}
+
+.card-base .back link {
+	border-top: solid 1px #f3f3f3;
+	height: 50px;
+	line-height: 50px;
+}
+
+.card-base .back link a{
+	color: white;
+}
+
+.card-base .back h3 {
+	font-size: 30px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+
+.card-base .back p {
+	letter-spacing: 1px;
+
+}
+
+.card-base:hover .front {
+	transform: perspective(600px) rotateY(180deg);
+}
+
+.card-base:hover .back {
+	transform: perspective(600px) rotateY(360deg);
+}
